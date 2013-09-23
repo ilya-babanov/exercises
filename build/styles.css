@@ -208,6 +208,8 @@ table {
   top: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .h-main {
@@ -218,6 +220,8 @@ table {
 .c-main {
   float: right;
   width: 66.666%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .one-third {
