@@ -1,0 +1,157 @@
+.container {
+    position: relative;
+    max-width: 1400px;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'aleksandrac';
+    font-weight: normal;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+.container:before,
+.container:after {
+    display: table;
+    content: " ";
+}
+.container:after {
+    clear: both;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+}
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+.row:after {
+    clear: both;
+}
+
+.row.center {
+    padding: 0;
+}
+
+.h-side,
+.h-main,
+.c-side,
+.c-main,
+.one-third {
+    float: left;
+    position: relative;
+    height: 100%;
+    min-height: 1px;
+    padding: 5px 5px 0 5px;
+}
+
+.h-side{
+    width: 33.333%;
+}
+.c-side {
+    width: 33.333%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.h-main {
+    padding: 0;
+    width: 66.666%;
+}
+.c-main {
+
+    float: right;
+    width: 66.666%;
+}
+.one-third {
+    width: 33.333%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.h-side .content {
+    height: 80px;
+    background-color: #bbe1ff;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    box-shadow: inset 0 0 3px #777777;
+}
+
+.c-side .content {
+    height: 100%;
+    background-color: #e1ffd4;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    box-shadow: inset 0 0 3px #777777;
+}
+.h-main .content{
+    height: 80px;
+    background-color: #d6eaff;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    box-shadow: inset 0 0 3px #777777;
+}
+.c-main .content{
+    height: 100%;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    box-shadow: inset 0 0 3px #777777;
+}
+.footer .content {
+    height: 80px;
+    background-color: #d9d9d9;
+    border-radius: 6px;
+    border: 1px solid #777777;
+    box-shadow: inset 0 0 3px #777777;
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .c-side {
+        position: relative;
+        width: 100%;
+    }
+    .c-main {
+        width: 100%;
+    }
+
+    .content {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .h-side {
+        width: 100%;
+    }
+    .h-main {
+        width: 100%;
+    }
+
+    .c-side {
+        position: relative;
+        width: 100%;
+    }
+    .c-main {
+        width: 100%;
+    }
+
+    .footer .one-third {
+        width: 100%;
+    }
+
+    .content {
+        padding: 4px;
+    }
+}

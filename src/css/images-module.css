@@ -1,0 +1,39 @@
+.interactive {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive:hover {
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(11, 24, 255, 0.9);
+    transform: scale(1.05);
+}
+
+.container.images {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    max-width: 800px;
+    text-align: center;
+}
+
+
+.imgContainer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+
+.transitionContainer {
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.imgOptions {
+    width: 100%;
+    font-size: 11px;
+    text-align: left;
+    padding: 0 10px;
+}

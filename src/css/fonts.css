@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'aleksandrac';
+    src: url('../fonts/aleksandrac_regular.eot');
+    src: url('../fonts/aleksandrac_regular.eot?#iefix') format('embedded-opentype'),
+    url('aleksandrac_regular.woff') format('woff'), /*fix for firefox - https://bugzilla.mozilla.org/show_bug.cgi?id=760436*/
+    url('../fonts/aleksandrac_regular.woff') format('woff'),
+    url('../fonts/aleksandrac_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
